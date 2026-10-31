@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>МАРТдекор — предложение по развитию сайта</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Роли цветов постоянные, значения — под клиента: акцент из логотипа или обложки группы */
+:root{
+  --sage:#642b38; --sage-dark:#344a3e; --sage-ink:#46604A; --gold:#A8762A; --mint:#CFE3CB;
+  --bg:#FBF9F6; --paper:#fff; --ink:#23241F; --muted:#666A63; --line:#E3DFD3; --tint:#EFF3EC; --warn:#FBF3E2;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.65 Manrope,system-ui,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+h1{font-size:46px;margin-bottom:16px}
+h2{font-size:32px;margin:0 0 6px}
+h3{font-size:22px;margin:0 0 6px}
+p{margin:11px 0}
+.sub{color:var(--muted);font-size:14.5px}
+p.sub{max-width:72ch}
+header{background:var(--sage-dark);color:#fff;padding:56px 0 48px}
+header .eyebrow{letter-spacing:3.4px;text-transform:uppercase;font-size:12px;color:var(--mint);margin-bottom:18px}
+header h1{color:#fff;max-width:24ch}
+header p{color:#E4E9E1;max-width:64ch}
+header .sub{color:#AEB9AE;margin-top:20px}
+header a{color:#E4E9E1}
+section{padding:46px 0 6px}
+.sec-num{display:block;width:max-content;font-size:12px;letter-spacing:2.6px;text-transform:uppercase;color:var(--sage);border-bottom:2px solid var(--sage);padding-bottom:5px;margin-bottom:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:22px 24px;margin:14px 0}
+.card .n{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--sage);line-height:1;margin-bottom:6px}
+.grid.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.grid.two{grid-template-columns:1fr} h1{font-size:36px}}
+.adv{list-style:none;padding:0;margin:14px 0}
+.adv li{padding:11px 0 11px 26px;border-bottom:1px solid var(--line);position:relative}
+.adv li:before{content:"";position:absolute;left:4px;top:21px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.adv li:last-child{border:0}
+.why{background:var(--tint);border-left:3px solid var(--sage);border-radius:0 9px 9px 0;padding:11px 16px;margin-top:12px;font-size:15.5px}
+.seg{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:18px 22px;margin:12px 0}
+.tag{display:inline-block;background:var(--tint);color:var(--sage-ink);font-size:12.5px;letter-spacing:.4px;padding:3px 11px;border-radius:999px;margin-bottom:8px}
+.src{color:var(--muted);font-size:14px;margin-top:2px}
+.note{background:var(--warn);border-radius:12px;padding:16px 20px;margin:18px 0;font-size:15.5px}
+.note strong{color:#7A5A22}
+ol.tasks{padding-left:22px}
+ol.tasks li{margin:12px 0}
+.cta{background:var(--sage-dark);color:#fff;border-radius:16px;padding:34px;text-align:center;margin:22px 0}
+.cta h3{color:#fff;font-size:28px}
+.cta a.btn{display:inline-block;background:var(--mint);color:var(--sage-dark);padding:14px 30px;border-radius:999px;text-decoration:none;font-weight:700;margin-top:14px}
+.cta .url{display:block;margin-top:13px;color:#D6DED4;font-size:15px;word-break:break-all}
+.cta p{color:#DCE3DA;max-width:56ch;margin:0 auto}
+.offer{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:22px 24px;margin:14px 0}
+.offer-main{border:2px solid var(--sage);background:#FAFCF8}
+.badge{display:inline-block;background:var(--sage);color:#fff;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;padding:3px 11px;border-radius:6px;margin-bottom:9px}
+blockquote{margin:14px 0;padding:14px 20px;background:var(--paper);border-left:3px solid var(--gold);border-radius:0 9px 9px 0;font-style:italic;color:#353B36}
+footer{margin-top:56px;padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer p{max-width:70ch}
+footer a{color:var(--sage-dark)}
+@media print{
+  body{background:#fff;font-size:11.5pt}
+  .wrap{max-width:100%;padding:0 14mm}
+  header{padding:16mm 0 11mm;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section{padding:7mm 0 0}
+  h2{margin-top:2mm}
+  .adv li{padding:7px 0 7px 24px}
+  p{margin:8px 0}
+  .card,.seg,.offer,.cta,.note,.why,blockquote{page-break-inside:avoid;break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h2,h3,.sec-num{page-break-after:avoid;break-after:avoid}
+  .card,.seg,.offer{padding:16px 20px;margin:10px 0}
+  .why{margin-top:9px;padding:9px 14px}
+  .cta{padding:24px;margin:16px 0}
+  footer{margin-top:28px;padding:18px 0 20px}
+  h1{font-size:28pt}h2{font-size:20pt}h3{font-size:14pt}
+  a{color:inherit;text-decoration:none}
+  @page{margin:0}
+}
+@media print{section{break-before:page}header{break-after:page}.wrap{padding:0 14mm} @page{margin:12mm 0}}
+</style>
+</head>
+<body><header><div class="wrap"><div class="eyebrow">Анализ и&nbsp;предложение · Настя</div><h1>МАРТдекор: от&nbsp;интереса к&nbsp;материалам&nbsp;— к&nbsp;предметному запросу</h1><p>Команда МАРТдекор, я&nbsp;изучила 169 публикаций вашей группы за&nbsp;27.10.2023–18.10.2026, два доступных комментария и&nbsp;содержание двух ваших сайтов. Предлагаю концепцию, которая делает подбор и&nbsp;примерку заметнее.</p><p class="sub">31 октября 2026 года · <a href="https://vk.ru/martdecoronline">Сообщество МАРТдекор</a></p></div></header><div class="wrap"><section><span class="sec-num">01 · МАРТдекор</span><h2>Пять выводов</h2><div class="card"><div class="n">1</div><h3>Два сайта уже&nbsp;работают</h3><p>У&nbsp;вас есть презентационный сайт и&nbsp;отдельный каталог. Предлагаю усилить путь к&nbsp;подбору, сохраняя полезное содержание.</p></div><div class="card"><div class="n">2</div><h3>Примерка&nbsp;— понятный повод обратиться</h3><p>В&nbsp;посте от&nbsp;18 октября 2026 года вы&nbsp;предлагаете примерку декора и&nbsp;панелей Orac на&nbsp;объекте. Этот&nbsp;сервис положен в&nbsp;основу прототипа.</p></div><div class="card"><div class="n">3</div><h3>Материалы можно выбирать осознаннее</h3><p>В&nbsp;публикациях есть сведения об&nbsp;уходе, фактуре и&nbsp;применении. В&nbsp;прототипе они&nbsp;собраны рядом с&nbsp;материалом и&nbsp;кнопкой запроса.</p></div><div class="card"><div class="n">4</div><h3>Комментарии не&nbsp;дают статистики спроса</h3><p>В&nbsp;доступной выгрузке&nbsp;— два комментария, оба о&nbsp;дизайне. На&nbsp;их&nbsp;основе нельзя утверждать, что&nbsp;покупателей чаще всего беспокоит цена или&nbsp;доставка.</p></div><div class="card"><div class="n">5</div><h3>Сайт может помочь подготовить визит</h3><p>У&nbsp;вас есть салон с&nbsp;образцами и&nbsp;опубликованный график. Каталог и&nbsp;текст запроса помогут посетителю прийти с&nbsp;более конкретной задачей.</p></div></section><section><span class="sec-num">02 · МАРТдекор</span><h2>Ваши сильные стороны</h2><p class="sub">Основано на&nbsp;ваших публикациях. Ссылки позволяют проверить каждый пункт.</p><ul class="adv"><li><b>Примерка на&nbsp;объекте.</b> Лепной декор и&nbsp;панели Orac можно оценить в&nbsp;пространстве заказчика. <a href="https://vk.ru/wall-53471837_7663">Источник</a></li><li><b>Выезд с&nbsp;образцами.</b> В&nbsp;публикации предлагается согласовать выезд. Условия уточняются индивидуально. <a href="https://vk.ru/wall-53471837_7663">Источник</a></li><li><b>Подбор оттенка.</b> Есть рекомендации по&nbsp;образцам краски и&nbsp;учёту освещения. <a href="https://vk.ru/wall-53471837_7532">Источник</a></li><li><b>Объяснение ухода.</b> Для&nbsp;текстильных покрытий Hikari опубликованы ограничения по&nbsp;влажной чистке. <a href="https://vk.ru/wall-53471837_7658">Источник</a></li><li><b>Гибкие материалы.</b> В&nbsp;группе представлен Flex Stone Ceppo под&nbsp;покраску. <a href="https://vk.ru/wall-53471837_7657">Источник</a></li><li><b>Профессиональные встречи.</b> В&nbsp;публикациях показаны семинары и&nbsp;обсуждение сочетаний материалов. <a href="https://vk.ru/wall-53471837_7644">Источник</a></li><li><b>Ассортимент Orac.</b> Салон заявляет официальный статус партнёра бренда; актуальность статуса следует подтвердить перед&nbsp;публикацией. <a href="https://vk.ru/wall-53471837_7516">Источник</a></li><li><b>Сочетание покрытий.</b> Есть полезные рекомендации по&nbsp;совместному использованию обоев и&nbsp;краски. <a href="https://vk.ru/wall-53471837_7562">Источник</a></li></ul></section><section><span class="sec-num">03 · МАРТдекор</span><h2>Что&nbsp;уже&nbsp;работает и&nbsp;что&nbsp;можно усилить</h2><div class="grid two"><div class="card"><h3>Уже&nbsp;есть</h3><ul><li>Сайт, каталог и&nbsp;публичные контакты.</li><li>Образцы и&nbsp;помощь с&nbsp;выбором.</li><li>Материалы для&nbsp;частных и&nbsp;профессиональных задач.</li><li>Содержательные публикации о&nbsp;продукции.</li></ul></div><div class="card"><h3>Предлагаю усилить</h3><ul><li>Понятный переход от&nbsp;идеи к&nbsp;запросу.</li><li>Видимость услуги примерки.</li><li>Условия и&nbsp;ограничения рядом с&nbsp;материалом.</li><li>Единые подтверждённые цифры в&nbsp;коммуникации.</li></ul></div></div><p class="sub">Это&nbsp;направления развития по&nbsp;результатам анализа содержания. Конверсия и&nbsp;работа отдела продаж не&nbsp;измерялись.</p></section><section><span class="sec-num">04 · МАРТдекор</span><h2>Конкурентный контекст Ростова-на-Дону</h2><div class="card"><span class="tag">Каталог и&nbsp;сервис</span><h3>Декоратор</h3><p>На&nbsp;сайте доступны каталог, поиск, портфолио и&nbsp;раздел доставки. Значит, сам каталог&nbsp;— ожидаемая часть сервиса.</p><p class="src"><a href="https://decorator-don.ru/">decorator-don.ru</a> · Таганрогская, 144/1</p><div class="why">В&nbsp;вашем предложении стоит выделить примерку и&nbsp;подбор сочетаний.</div></div><div class="card"><span class="tag">Материалы под&nbsp;проект</span><h3>М-Декор</h3><p>Карточка салона у&nbsp;производителя RODECOR описывает работу с&nbsp;образцами и&nbsp;каталогами, поставку под&nbsp;заказ.</p><p class="src"><a href="https://rodecor.ru/contacts/stores/999/">Карточка RODECOR</a> · Кировский, 122</p><div class="why">Покупателю полезно сразу понимать следующий шаг и&nbsp;способ уточнить сроки конкретного заказа.</div></div><p class="sub">Рейтинги и&nbsp;расстояния не&nbsp;использованы без&nbsp;надёжной проверки. Позиции в&nbsp;поиске и&nbsp;объём заявок конкурентов не&nbsp;измерялись.</p></section><section><span class="sec-num">05 · МАРТдекор</span><h2>Для&nbsp;каких задач построен прототип</h2><p>Ниже&nbsp;— сценарии для&nbsp;проверки, а&nbsp;не&nbsp;рассчитанные доли вашей аудитории.</p><div class="seg"><span class="tag">Дом</span><h3>Есть идея, нужна помощь</h3><p>Понять, какие материалы будут сочетаться в&nbsp;комнате.</p></div><div class="seg"><span class="tag">Выбор</span><h3>Нужен конкретный материал</h3><p>Найти бренд, посмотреть описание и&nbsp;уточнить цену.</p></div><div class="seg"><span class="tag">Профессиональный проект</span><h3>Дизайнер подбирает комплектацию</h3><p>Обсудить материалы и&nbsp;образцы для&nbsp;своего проекта.</p></div><div class="seg"><span class="tag">Объект</span><h3>Важно увидеть фактуру вживую</h3><p>Уточнить условия примерки Orac и&nbsp;выезда с&nbsp;образцами.</p></div></section><section><span class="sec-num">06 · МАРТдекор</span><h2>Что&nbsp;должен решать сайт</h2><ol class="tasks"><li><b>Показывать ценность.</b> Помогать представить материалы в&nbsp;реальном интерьере.</li><li><b>Упрощать выбор.</b> Давать поиск по&nbsp;бренду и&nbsp;фильтр по&nbsp;направлению.</li><li><b>Объяснять ограничения.</b> Размещать особенности ухода и&nbsp;выбора в&nbsp;карточке.</li><li><b>Готовить запрос.</b> Собирать материал, помещение и&nbsp;пожелания в&nbsp;понятный текст.</li><li><b>Приводить в&nbsp;салон.</b> Показывать адрес, часы работы и&nbsp;телефон.</li><li><b>Давать основу для&nbsp;измерений.</b> После&nbsp;запуска отслеживать обращения и&nbsp;визиты по&nbsp;согласованным событиям аналитики.</li></ol></section><section><span class="sec-num">07 · МАРТдекор</span><h2>Прототип уже&nbsp;можно посмотреть</h2><p>Я&nbsp;собрала главную страницу, каталог с&nbsp;поиском и&nbsp;фильтрами, карточки материалов и&nbsp;советы. Основной сценарий&nbsp;— подобрать направление и&nbsp;подготовить запрос на&nbsp;обсуждение с&nbsp;менеджером.</p><div class="cta"><h3>Откройте концепцию МАРТдекор</h3><a class="btn" href="https://borodinavalerun-lang.github.io/prototipy/martdecor/">Открыть прототип</a><span class="url">https://borodinavalerun-lang.github.io/prototipy/martdecor/</span></div><p class="sub">Это&nbsp;локальная концепция. Вместо фотографий&nbsp;— подписанные макеты фактур. Цены и&nbsp;остатки уточняются. Форма создаёт текст на&nbsp;компьютере и&nbsp;ничего не&nbsp;отправляет. </p><p>Дальше проще открыть и&nbsp;пройти путь от&nbsp;материала к&nbsp;запросу.</p></section><section><span class="sec-num">08 · МАРТдекор</span><h2>Варианты первого предложения</h2><div class="offer offer-main"><span class="badge">В&nbsp;прототипе</span><h3>А.&nbsp;Подберите материалы под&nbsp;ваш&nbsp;интерьер</h3><p>Покажите проект или&nbsp;идею, сравните фактуры и&nbsp;обсудите подбор с&nbsp;салоном.</p></div><div class="offer"><h3>Б. Примерьте Orac на&nbsp;объекте</h3><p>На&nbsp;основе вашей услуги из&nbsp;поста от&nbsp;18.10.2026. Условия выезда согласуются отдельно.</p></div><div class="offer"><h3>В.&nbsp;Подберите оттенок при&nbsp;своём освещении</h3><p>На&nbsp;основе рекомендаций по&nbsp;образцам краски MONS.</p></div><div class="offer"><h3>Г. Обсудите комплектацию проекта</h3><p>Для&nbsp;дизайнеров и&nbsp;заказчиков с&nbsp;готовой концепцией. Объём услуг и&nbsp;условия обсуждаются с&nbsp;салоном.</p></div></section><footer><p>Источники: <a href="https://vk.ru/martdecoronline">ВКонтакте</a>, <a href="https://martdecor.ru/">martdecor.ru</a>, <a href="https://martdecor.online/">martdecor.online</a>, сайты конкурентов, указанные выше. Проверка: 31.10.2026.</p><p>Настя · контент-маркетолог и&nbsp;разработка лендингов с&nbsp;помощью ИИ.</p></footer></div></body></html>

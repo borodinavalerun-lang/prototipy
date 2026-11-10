@@ -34,3 +34,5 @@
 .help-sample.paint{left:88px;top:0;z-index:2;transform:rotate(3deg)}
 .help-sample.panel{right:8px;top:14px;transform:rotate(13deg)}
 @media(max-width:760px){.home-materials .catalog-help{gap:24px;margin-top:36px;padding:32px 12px}.home-materials .catalog-help h2{font-size:30px}.home-materials .catalog-help p{font-size:16px}.home-materials .catalog-help .btn{width:auto;max-width:100%;padding-inline:22px}.help-samples{transform:scale(.9);margin-bottom:-10px}}
+
+.home-materials .audience-grid h3{font-size:24px;line-height:1.25;max-width:24ch;margin-bottom:18px}.home-materials .audience-grid p{font-size:16px;line-height:1.65}.home-materials .audience-grid .inline-button,.home-materials .audience-grid .text-link{font-size:15px}

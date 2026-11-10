@@ -23,9 +23,14 @@
 @media(max-width:760px){.home-materials>header nav{font-size:18px;gap:8px}.home-materials>header nav a{width:100%;padding:12px 0}}
 
 /* Consultation after the material categories */
-.home-materials .catalog-help{margin-top:48px;padding:36px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:40px}
-.home-materials .catalog-help-copy{max-width:640px}
-.home-materials .catalog-help h2{font-size:clamp(28px,2.5vw,36px);line-height:1.2;letter-spacing:-.03em;margin:0 0 14px;text-wrap:balance}
+.home-materials .catalog-help{margin-top:64px;padding:44px 24px 48px;border-block:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;text-align:center;scroll-margin-top:30px}
+.home-materials .catalog-help-copy{max-width:720px}
+.home-materials .catalog-help h2{font-size:clamp(30px,3.3vw,46px);line-height:1.16;letter-spacing:-.03em;margin:0 0 18px;text-wrap:balance}
 .home-materials .catalog-help p{font-size:18px;line-height:1.55;margin:0;color:var(--muted)}
-.home-materials .catalog-help .btn{flex-shrink:0;font-size:16px;min-height:58px;padding:18px 26px;text-align:center}
-@media(max-width:760px){.home-materials .catalog-help{align-items:flex-start;flex-direction:column;gap:24px;margin-top:32px;padding:28px 0}.home-materials .catalog-help h2{font-size:28px}.home-materials .catalog-help p{font-size:16px}.home-materials .catalog-help .btn{width:100%}}
+.home-materials .catalog-help .btn{font-size:16px;min-height:58px;padding:18px 30px;text-align:center}
+.help-samples{position:relative;width:270px;height:140px;margin:0 auto 4px}
+.help-sample{position:absolute;width:94px;height:116px;object-fit:cover;border:5px solid #fff;box-shadow:0 8px 18px rgba(32,37,31,.14)}
+.help-sample.wallpaper{left:10px;top:12px;transform:rotate(-12deg)}
+.help-sample.paint{left:88px;top:0;z-index:2;transform:rotate(3deg)}
+.help-sample.panel{right:8px;top:14px;transform:rotate(13deg)}
+@media(max-width:760px){.home-materials .catalog-help{gap:24px;margin-top:36px;padding:32px 12px}.home-materials .catalog-help h2{font-size:30px}.home-materials .catalog-help p{font-size:16px}.home-materials .catalog-help .btn{width:auto;max-width:100%;padding-inline:22px}.help-samples{transform:scale(.9);margin-bottom:-10px}}

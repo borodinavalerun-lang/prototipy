@@ -10,5 +10,8 @@
  reveals.push(...cards);
  const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;observer.unobserve(entry.target);if(reduced.matches||(entry.target.classList.contains('process-step')&&!matchMedia('(max-width:760px)').matches))continue;entry.target.animate(entry.target.classList.contains('process-step')?[{opacity:.75,transform:'translateY(20px)'},{opacity:1,transform:'translateY(0)'}]:[{clipPath:'inset(0 0 12% 0)'},{clipPath:'inset(0 0 0 0)'}],{duration:650,easing:'cubic-bezier(.16,1,.3,1)'});}},{threshold:.12});
  reveals.forEach(el=>observer.observe(el));
+ const audienceArt=[...document.querySelectorAll('.audience-art')];
+ const artObserver=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;artObserver.unobserve(entry.target);if(reduced.matches)continue;entry.target.animate([{opacity:.45,clipPath:'inset(0 100% 0 0)'},{opacity:1,clipPath:'inset(0 0 0 0)'}],{duration:800,easing:'cubic-bezier(.16,1,.3,1)'});}}, {threshold:.3});
+ audienceArt.forEach(el=>artObserver.observe(el));
  reduced.addEventListener('change',()=>{if(reduced.matches)document.getAnimations().forEach(a=>a.cancel());});
 })();

@@ -13,5 +13,7 @@
  const audienceArt=[...document.querySelectorAll('.audience-art')];
  const artObserver=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;artObserver.unobserve(entry.target);if(reduced.matches)continue;entry.target.animate([{opacity:.45,clipPath:'inset(0 100% 0 0)'},{opacity:1,clipPath:'inset(0 0 0 0)'}],{duration:800,easing:'cubic-bezier(.16,1,.3,1)'});}}, {threshold:.3});
  audienceArt.forEach(el=>artObserver.observe(el));
+ const sheet=document.querySelector('.order-sheet');
+ if(sheet){const orderObserver=new IntersectionObserver(entries=>{if(!entries.some(e=>e.isIntersecting))return;orderObserver.disconnect();if(reduced.matches)return;sheet.querySelectorAll('.order-line').forEach((row,i)=>{row.animate([{opacity:.35,clipPath:'inset(0 100% 0 0)'},{opacity:1,clipPath:'inset(0 0 0 0)'}],{duration:550,delay:i*300,easing:'cubic-bezier(.16,1,.3,1)'});row.querySelector('path').animate([{strokeDashoffset:1},{strokeDashoffset:0}],{duration:400,delay:i*300+300,fill:'backwards',easing:'ease-out'});});},{threshold:.55});orderObserver.observe(sheet);}
  reduced.addEventListener('change',()=>{if(reduced.matches)document.getAnimations().forEach(a=>a.cancel());});
 })();
